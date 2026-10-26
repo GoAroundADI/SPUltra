@@ -1,0 +1,9 @@
+{
+  "indentation": {
+    "spaces": 4
+  },
+  "lineLength": 140,
+  "respectsExistingLineBreaks": true,
+  "maximumBlankLines": 1,
+  "multiElementCollectionTrailingCommas": true
+}

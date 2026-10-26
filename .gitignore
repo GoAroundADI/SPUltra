@@ -1,0 +1,13 @@
+# macOS / Xcode
+.DS_Store
+.build/
+.swiftpm/
+dist/
+*.dmg
+*.xcuserstate
+*.xcodeproj/
+
+# Local tooling
+.vscode/
+.idea/
+*.swp

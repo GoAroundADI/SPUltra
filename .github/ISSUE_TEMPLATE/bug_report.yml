@@ -1,0 +1,86 @@
+name: 缺陷报告
+description: 报告 SP Ultra 中可复现的问题
+title: "[缺陷] "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢反馈。发布日志前请先删除密码、私钥、主机指纹、用户名和个人路径。
+  - type: input
+    id: app-version
+    attributes:
+      label: App 版本
+      description: 关于窗口中的版本，或 Info.plist 中的 CFBundleShortVersionString。
+      placeholder: "1.0.0 (1)"
+    validations:
+      required: true
+  - type: input
+    id: macos
+    attributes:
+      label: macOS 版本
+      placeholder: "macOS 15.5 (24F74)"
+    validations:
+      required: true
+  - type: dropdown
+    id: chip
+    attributes:
+      label: Mac 芯片
+      options:
+        - Apple 芯片（M1/M2/M3/M4）
+        - Intel
+    validations:
+      required: true
+  - type: dropdown
+    id: protocol
+    attributes:
+      label: 连接类型
+      options:
+        - SFTP
+        - SCP
+        - SFTP
+        - 与连接无关
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤
+      placeholder: |
+        1. 打开…
+        2. 点击…
+        3. 看到…
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期望行为
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: 实际行为
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: 相关日志
+      description: 从应用内“连接日志”复制；请先脱敏。
+      render: text
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: 截图或录屏
+      description: 如有助于说明问题，可直接拖入图片。
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: 检查清单
+      options:
+        - label: 我已删除报告中的密码、私钥和主机指纹。
+          required: true
+        - label: 我已搜索过现有 Issue，确认不是重复问题。
+          required: true

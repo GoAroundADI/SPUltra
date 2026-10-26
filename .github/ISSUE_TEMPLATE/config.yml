@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 安全漏洞
+    url: https://github.com/GoAroundADI/SP-Ultra/security/advisories/new
+    about: 请通过私密渠道报告安全问题，不要创建公开 Issue。
+  - name: MCP 文档
+    url: https://github.com/GoAroundADI/SP-Ultra/blob/main/MCP_SETUP.md
+    about: 安装、工具列表、主机密钥重置与故障排查。
+  - name: 开发指南
+    url: https://github.com/GoAroundADI/SP-Ultra/blob/main/docs/DEVELOPMENT.md
+    about: 构建、测试、打包、签名与发布流程。
